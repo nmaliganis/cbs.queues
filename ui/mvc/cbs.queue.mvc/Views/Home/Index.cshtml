@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<button type="button">You have @ViewBag.NotificationCount Notifications</button>
+<button type="button">You have @ViewBag.LoggingCount Logging</button>
+<button type="button">You have @ViewBag.AttachmentCount Attachments</button>
+<button type="button">You have @ViewBag.IntegrationCount Integrations</button>
+<button type="button">You have @ViewBag.ResolutionCount Resolutions</button>
+<button type="button">You have @ViewBag.ReceptionCount Receptions</button>
+<button type="button">You have @ViewBag.ContentProcessingCount Content Processing</button>
+<button type="button">You have @ViewBag.SchemaValidationCount Schema Validations</button>
+
+<h2>Messages Queues</h2>
+<div id="dataGrid" class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Data 1</th>
+            <th>Data 2</th>
+            <!-- Add more columns as needed -->
+        </tr>
+        </thead>
+        <tbody id="dataDisplay">
+        <!-- Data rows will be inserted here -->
+        </tbody>
+    </table>
+</div>
+
+
+
+@section Scripts {
+    <script src="~/js/websocket-client.js"></script>
+}
+

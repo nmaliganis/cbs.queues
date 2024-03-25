@@ -1,0 +1,1156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>cbs.queue.monitoring.api</name>
+    </assembly>
+    <members>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetAttachmentDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetAttachmentDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetAttachmentDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetContentProcessingDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetContentProcessingDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetContentProcessingDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetIntegrationDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetIntegrationDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetIntegrationDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetLoggingDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetLoggingDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetLoggingDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetNotificationDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetNotificationDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetNotificationDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetReceptionDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetReceptionDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetReceptionDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetResolutionDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetResolutionDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetResolutionDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Events.NetSchemaValidationDetectionEventArgs">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Events.NetSchemaValidationDetectionEventArgs.#ctor(System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="payload"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.Events.NetSchemaValidationDetectionEventArgs.Payload">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetAttachmentDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetAttachmentDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetAttachmentDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetContentProcessingDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetContentProcessingDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetContentProcessingDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetIntegrationDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetIntegrationDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetIntegrationDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetLoggingDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetLoggingDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetLoggingDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetNotificationDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetNotificationDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetNotificationDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetReceptionDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetReceptionDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetReceptionDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetResolutionDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetResolutionDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetResolutionDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.Inbound.INetSchemaValidationDetectionActionListener">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.Inbound.INetSchemaValidationDetectionActionListener.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetSchemaValidationDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.WsBaseServer">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetLoggingDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetNotificationDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetIntegrationDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetAttachmentDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetReceptionDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetResolutionDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetContentProcessingDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="E:cbs.queue.monitoring.api.Commanding.WsBaseServer.NetSchemaValidationDetector">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseLoggingDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetLoggingDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetLoggingDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseNotificationDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetNotificationDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetNotificationDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseContentProcessingDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetContentProcessingDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetContentProcessingDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseSchemaValidationDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetSchemaValidationDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetSchemaValidationDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseResolutionDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetResolutionDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetResolutionDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseIntegrationDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetIntegrationDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetIntegrationDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseReceptionDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetReceptionDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetReceptionDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.RaiseAttachmentDetection(System.String)">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Attach(cbs.queue.monitoring.api.Commanding.Inbound.INetAttachmentDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Commanding.WsBaseServer.Detach(cbs.queue.monitoring.api.Commanding.Inbound.INetAttachmentDetectionActionListener)">
+            <summary>
+            Method
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Commanding.WsServer">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Commanding.WsServer.GetWsServer">
+            <summary>
+            Prop
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController">
+            <summary>
+            Message Controller
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.#ctor(MediatR.IMediator,Microsoft.AspNetCore.Mvc.IUrlHelper,cbs.common.infrastructure.TypeHelpers.ITypeHelperService,cbs.common.infrastructure.PropertyMappings.IPropertyMappingService)">
+            <summary>
+            ctor
+            </summary>
+            <param name="mediator"></param>
+            <param name="urlHelper"></param>
+            <param name="typeHelperService"></param>
+            <param name="propertyMappingService"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchLoggingsAsync">
+            <summary>
+            Get - Fetch all Blocked Loggings
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountLoggingsAsync">
+            <summary>
+            Get - Fetch Count Blocked Loggings
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.RemoveLoggingAsync(System.String)">
+            <summary>
+            Delete - Remove Blocked Logging
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchNotificationsAsync">
+            <summary>
+            Get - Fetch all Blocked Notifications
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountNotificationsAsync">
+            <summary>
+            Get - Fetch Count Blocked Notifications
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchAttachmentsAsync">
+            <summary>
+            Get - Fetch all Blocked Attachments
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountAttachmentsAsync">
+            <summary>
+            Get - Fetch Count Blocked Attachments
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchContentProcessingsAsync">
+            <summary>
+            Get - Fetch all Blocked ContentProcessings
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountContentProcessingsAsync">
+            <summary>
+            Get - Fetch Count Blocked ContentProcessings
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchIntegrationsAsync">
+            <summary>
+            Get - Fetch all Blocked Integrations
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountIntegrationsAsync">
+            <summary>
+            Get - Fetch Count Blocked Integrations
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchReceptionsAsync">
+            <summary>
+            Get - Fetch all Blocked Receptions
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountReceptionsAsync">
+            <summary>
+            Get - Fetch Count Blocked Receptions
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchResolutionsAsync">
+            <summary>
+            Get - Fetch all Blocked Resolutions
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountResolutionsAsync">
+            <summary>
+            Get - Fetch Count Blocked Resolutions
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchSchemaValidationsAsync">
+            <summary>
+            Get - Fetch all Blocked SchemaValidations
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchCountSchemaValidationsAsync">
+            <summary>
+            Get - Fetch Count Blocked SchemaValidations
+            </summary>
+            <remarks>Fetch all Messages </remarks>
+            <response code="200">Resource retrieved correctly</response>
+            <response code="404">Resource Not Found</response>
+            <response code="500">Internal Server Error.</response>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Controllers.HomeController">
+            <summary>
+            HomeController
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Controllers.HomeController.Index">
+            <summary>
+            Index
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Helpers.HttpGlobalExceptionFilter">
+            <summary>
+            Class : HttpGlobalExceptionFilter
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Helpers.HttpGlobalExceptionFilter.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILogger{cbs.queue.monitoring.api.Helpers.HttpGlobalExceptionFilter})">
+            <summary>
+            Ctor : HttpGlobalExceptionFilter
+            </summary>
+            <param name="env"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Helpers.HttpGlobalExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            Method : OnException
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Helpers.InternalServerErrorObjectResult">
+            <summary>
+            Class : InternalServerErrorObjectResult
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Helpers.InternalServerErrorObjectResult.#ctor(System.Object)">
+            <summary>
+            Ctor : InternalServerErrorObjectResult
+            </summary>
+            <param name="error"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Program">
+            <summary>
+            Class : Program
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Program.CreateWebHostBuilder(Microsoft.Extensions.Configuration.IConfiguration,System.String[])">
+            <summary>
+            CreateWebHostBuilder
+            </summary>
+            <param name="configuration"></param>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Proxies.Msmq.IMsmqConfiguration">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.Msmq.IMsmqConfiguration.EstablishConnection">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Proxies.Msmq.MsmqConfiguration">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.Msmq.MsmqConfiguration.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.Msmq.MsmqConfiguration.EstablishConnection">
+            <summary>
+            Method
+            </summary>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Proxies.WSs.IWsConfiguration">
+            <summary>
+            Interface
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.IWsConfiguration.EstablishConnection">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.#ctor">
+            <summary>
+            Ctor
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.EstablishConnection">
+            <summary>
+            Method
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetLoggingDetectionEventArgs)">
+            <summary>
+            Method:
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetNotificationDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetAttachmentDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetReceptionDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetResolutionDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Proxies.WSs.WsConfiguration.Update(System.Object,cbs.queue.monitoring.api.Commanding.Events.NetSchemaValidationDetectionEventArgs)">
+            <summary>
+            Method
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Repositories.QueueRepository">
+            <summary>
+            Class Singleton
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedNotification">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedLogging">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedAttachmentReception">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedContentProcessing">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedIntegration">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedReception">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedResolution">
+            <summary>
+            Resolution
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.BlockedSchemaValidation">
+            <summary>
+            Schema Validation
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Repositories.QueueRepository.GetInstance">
+            <summary>
+            Property
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushNotification(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="notificationToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetNotifications">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountNotifications">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushLogging(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="payloadToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetLoggings">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountLoggings">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.RemoveLogging(System.String)">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushAttachment(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="payloadToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetAttachments">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountAttachments">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushContentProcessing(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="payloadToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetContentProcessing">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountContentProcessing">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushIntegration(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="payloadToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetIntegrations">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountIntegrations">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushReception(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="payloadToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetReceptions">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountReceptions">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushResolution(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="payloadToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetResolutions">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountResolutions">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.PushSchemaValidation(System.String)">
+            <summary>
+            Method
+            </summary>
+            <param name="payloadToBeAdded"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetSchemaValidations">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Repositories.QueueRepository.GetCountSchemaValidations">
+            <summary>
+            Method
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.JobFactory">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.JobFactory.#ctor(System.IServiceProvider)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="serviceProvider"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.JobFactory.NewJob(Quartz.Spi.TriggerFiredBundle,Quartz.IScheduler)">
+            <summary>
+            Method
+            </summary>
+            <param name="bundle"></param>
+            <param name="scheduler"></param>
+            <returns></returns>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.JobFactory.ReturnJob(Quartz.IJob)">
+            <summary>
+            Method
+            </summary>
+            <param name="job"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.JobSchedule">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.JobSchedule.#ctor(System.Type,System.String)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="jobType"></param>
+            <param name="cronExpression"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Schedulers.JobSchedule.JobType">
+            <summary>
+            Prop
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Schedulers.JobSchedule.CronExpression">
+            <summary>
+            Prop
+            </summary>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetAttachmentReceptionWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetAttachmentReceptionWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetContentProcessingWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetContentProcessingWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetIntegrationWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetIntegrationWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetLoggingWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetLoggingWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetNotificationWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetNotificationWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetReceptionWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetReceptionWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetResolutionWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetResolutionWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.NetSchemaValidationWsInitializerJob">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.NetSchemaValidationWsInitializerJob.Execute(Quartz.IJobExecutionContext)">
+            <summary>
+            Method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Schedulers.QuartzHostedService">
+            <summary>
+            Class
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.QuartzHostedService.#ctor(Quartz.ISchedulerFactory,System.Collections.Generic.IEnumerable{cbs.queue.monitoring.api.Schedulers.JobSchedule},Quartz.Spi.IJobFactory)">
+            <summary>
+            Ctor
+            </summary>
+            <param name="schedulerFactory"></param>
+            <param name="jobSchedules"></param>
+            <param name="jobFactory"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Schedulers.QuartzHostedService.Scheduler">
+            <summary>
+            Prop
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.QuartzHostedService.StartAsync(System.Threading.CancellationToken)">
+            <summary>
+            Method
+            </summary>
+            <param name="cancellationToken"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Schedulers.QuartzHostedService.StopAsync(System.Threading.CancellationToken)">
+            <summary>
+            Method
+            </summary>
+            <param name="cancellationToken"></param>
+        </member>
+        <member name="T:cbs.queue.monitoring.api.Startup">
+            <summary>
+            Startup class for configurations
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Startup ctor
+            </summary>
+            <param name="configuration"></param>
+            <param name="hostEnv"></param>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Startup.Configuration">
+            <summary>
+            IConfiguration
+            </summary>
+        </member>
+        <member name="P:cbs.queue.monitoring.api.Startup.HostEnv">
+            <summary>
+            IWebHostEnvironment
+            </summary>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:cbs.queue.monitoring.api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure application builder
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
