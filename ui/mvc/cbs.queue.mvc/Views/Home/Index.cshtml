@@ -1,15 +1,38 @@
-﻿@{
+﻿@using cbs.queue.mvc.Services.Contracts
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<button type="button">You have @ViewBag.NotificationCount Notifications</button>
-<button type="button">You have @ViewBag.LoggingCount Logging</button>
-<button type="button">You have @ViewBag.AttachmentCount Attachments</button>
-<button type="button">You have @ViewBag.IntegrationCount Integrations</button>
-<button type="button">You have @ViewBag.ResolutionCount Resolutions</button>
-<button type="button">You have @ViewBag.ReceptionCount Receptions</button>
-<button type="button">You have @ViewBag.ContentProcessingCount Content Processing</button>
-<button type="button">You have @ViewBag.SchemaValidationCount Schema Validations</button>
+<style>
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    flex-basis: calc(25% - 10px); /* Adjust as needed for spacing */
+    margin: 5px;
+}
+</style>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<!-- Bootstrap JS (required for modal functionality) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="button-container">
+    <button type="button" class="btn btn-primary" data-modal-title="Notifications" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.NotificationCount Notifications</button>
+    <button type="button" class="btn btn-primary" data-modal-title="Logging" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.LoggingCount Logging</button>
+    <button type="button" class="btn btn-primary" data-modal-title="Attchments" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.AttachmentCount Attachments</button>
+    <button type="button" class="btn btn-primary" data-modal-title="Integrations" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.IntegrationCount Integrations</button>
+    <button type="button" class="btn btn-primary" data-modal-title="Resolutions" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.ResolutionCount Resolutions</button>
+    <button type="button" class="btn btn-primary" data-modal-title="Receptions" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.ReceptionCount Receptions</button>
+    <button type="button" class="btn btn-primary" data-modal-title="Content Processing" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.ContentProcessingCount Content Processing</button>
+    <button type="button" class="btn btn-primary" data-modal-title="Schema Validations" data-toggle="modal" data-target="#popUpModal">You have @ViewBag.SchemaValidationCount Schema Validations</button>
+</div>
 
 <h2>Messages Queues</h2>
 <div id="dataGrid" class="table-responsive">
@@ -19,16 +42,70 @@
             <th>#</th>
             <th>Data 1</th>
             <th>Data 2</th>
-            <!-- Add more columns as needed -->
         </tr>
         </thead>
         <tbody id="dataDisplay">
-        <!-- Data rows will be inserted here -->
         </tbody>
     </table>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="popUpModal" tabindex="-1" role="dialog" aria-labelledby="popUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width: 800px;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popUpModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modalDataGrid" class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Data 1</th>
+                        </tr>
+                        </thead>
+                        <tbody id="modalDataDisplay"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script>
+    $('#popUpModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var modalTitle = button.data('modal-title');
+
+        var modal = $(this);
+        modal.find('.modal-title').text(modalTitle);
+
+        $.ajax({
+            url: '/Home/GetList',
+            type: 'GET',
+            data: { btn: modalTitle },
+            success: function (data) {
+                $('#modalDataDisplay').empty();
+
+                // Populate table with data
+                $.each(data, function (index, item) {
+                    var rowData = '<tr><td>' + (index + 1) + '</td><td>' + item + '</td></tr>';
+                    $('#modalDataDisplay').append(rowData);
+                });
+            },
+            error: function (xhr, status, error) {
+                console.error("Error getting data:", error);
+            }
+        });
+    });
+</script>
 
 @section Scripts {
     <script src="~/js/websocket-client.js"></script>

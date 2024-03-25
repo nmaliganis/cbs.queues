@@ -424,14 +424,10 @@
             Message Controller
             </summary>
         </member>
-        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.#ctor(MediatR.IMediator,Microsoft.AspNetCore.Mvc.IUrlHelper,cbs.common.infrastructure.TypeHelpers.ITypeHelperService,cbs.common.infrastructure.PropertyMappings.IPropertyMappingService)">
+        <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.#ctor">
             <summary>
             ctor
             </summary>
-            <param name="mediator"></param>
-            <param name="urlHelper"></param>
-            <param name="typeHelperService"></param>
-            <param name="propertyMappingService"></param>
         </member>
         <member name="M:cbs.queue.monitoring.api.Controllers.API.V1.QueuesController.FetchLoggingsAsync">
             <summary>
